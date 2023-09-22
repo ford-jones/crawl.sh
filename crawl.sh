@@ -5,7 +5,7 @@ COLOR_GREEN="\x1b[1;32m"
 COLOR_RED="\x1b[1;31m"
 RESET="\e[0m"
 
-echo -e "${COLOR_BLUE} Welcome to crawl.sh \e[0m"
+echo -e "${COLOR_BLUE} Welcome to crawl.sh ${RESET}"
 echo -e "${COLOR_BLUE} Paste url's below and hit enter to clone html directly from the web.${RESET}"
 echo -e "${COLOR_BLUE} Press [Ctrl + C] to escape.${RESET}"
 
