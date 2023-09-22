@@ -12,3 +12,9 @@ Exit out at any time:
 ```
 [CTRL + C]
 ```
+
+## Script permissions:
+This script requires r/w access to your local filesystem. If you encounter any issues executing the commands above, try this:
+```
+chmod +x crawl.sh
+```
