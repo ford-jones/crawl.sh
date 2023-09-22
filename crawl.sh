@@ -12,14 +12,14 @@ echo -e "${COLOR_BLUE} Press [Ctrl + C] to escape.${RESET}"
 while :                                                                             #   initialise the program
 do
     read                                                                            #   read user input, $REPLY with result after ENTER keystroke
-    GET_DATE=$(date | sed 's/ //g')                                                  #   get the current date, remove spaces with POSIX expression
+    GET_DATE=$(date | sed 's/ //g')                                                 #   get the current date, remove spaces with POSIX expression
     curl -output $REPLY                                                             #   use curl to connect to the input url, the -output flag indicates to return in html
 
     if [ -f "utput" ]                                                               #   check a file named "utput" exists (default returned filename from previous expression)
     then
         mv utput ./snapshots                                                        #   move the file into snapshots directory
         cd ./snapshots                                                              #   change directory into snapshots
-        mv utput ${GET_DATE}.html                                                    #   rename "utput" to the value of getdate + ".html"
+        mv utput ${GET_DATE}.html                                                   #   rename "utput" to the value of getdate + ".html"
         cd ../                                                                      #   return to the projects base directory
 
         echo -e "${COLOR_GREEN} Snapshot success! ${RESET}"
