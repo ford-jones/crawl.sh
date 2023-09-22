@@ -1,0 +1,2 @@
+This file exists solely to include the ./snapshots directory
+in pushes to github.
